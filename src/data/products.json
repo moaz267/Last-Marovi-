@@ -1,0 +1,268 @@
+
+{
+  "categories": {
+    "bedrooms": {
+      "name": {
+        "ar": "غرف النوم",
+        "en": "Bedrooms"
+      }
+    },
+    "livingRooms": {
+      "name": {
+        "ar": "غرف المعيشة",
+        "en": "Living Rooms"
+      }
+    },
+    "diningRooms": {
+      "name": {
+        "ar": "غرف السفرة",
+        "en": "Dining Rooms"
+      }
+    },
+    "children": {
+      "name": {
+        "ar": "غرف الأطفال",
+        "en": "Children Rooms"
+      }
+    },
+    "offices": {
+      "name": {
+        "ar": "المكاتب",
+        "en": "Offices"
+      }
+    },
+    "storage": {
+      "name": {
+        "ar": "التخزين",
+        "en": "Storage"
+      }
+    }
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": {
+        "ar": "غرفة نوم ملكية 1",
+        "en": "Royal Bedroom Set 1"
+      },
+      "description": {
+        "ar": "غرفة نوم فاخرة بتصميم عصري أنيق",
+        "en": "Luxurious bedroom with elegant modern design"
+      },
+      "price": 15000,
+      "currency": "SAR",
+      "image": "/images/bedroom-1.jpg",
+      "category": "bedrooms"
+    },
+    {
+      "id": 2,
+      "name": {
+        "ar": "غرفة نوم كلاسيكية 2",
+        "en": "Classic Bedroom 2"
+      },
+      "description": {
+        "ar": "غرفة نوم فاخرة بتصميم عصري أنيق",
+        "en": "Luxurious bedroom with elegant modern design"
+      },
+      "price": 12500,
+      "currency": "SAR",
+      "image": "/images/bedroom-2.jpg",
+      "category": "bedrooms"
+    },
+    {
+      "id": 3,
+      "name": {
+        "ar": "غرفة نوم عصرية 3",
+        "en": "Modern Bedroom 3"
+      },
+      "description": {
+        "ar": "غرفة نوم فاخرة بتصميم عصري أنيق",
+        "en": "Luxurious bedroom with elegant modern design"
+      },
+      "price": 14000,
+      "currency": "SAR",
+      "image": "/images/bedroom-3.jpg",
+      "category": "bedrooms"
+    },
+    {
+      "id": 4,
+      "name": {
+        "ar": "غرفة نوم فاخرة 4",
+        "en": "Luxury Bedroom 4"
+      },
+      "description": {
+        "ar": "غرفة نوم فاخرة بتصميم عصري أنيق",
+        "en": "Luxurious bedroom with elegant modern design"
+      },
+      "price": 16500,
+      "currency": "SAR",
+      "image": "/images/bedroom-4.jpg",
+      "category": "bedrooms"
+    },
+    {
+      "id": 5,
+      "name": {
+        "ar": "صالون كلاسيكي 5",
+        "en": "Classic Sofa Set 5"
+      },
+      "description": {
+        "ar": "صالون مريح وأنيق لاستقبال الضيوف",
+        "en": "Comfortable and elegant living room for guests"
+      },
+      "price": 12000,
+      "currency": "SAR",
+      "image": "/images/living-1.jpg",
+      "category": "livingRooms"
+    },
+    {
+      "id": 6,
+      "name": {
+        "ar": "كنبة زاوية 6",
+        "en": "Corner Sofa 6"
+      },
+      "description": {
+        "ar": "صالون مريح وأنيق لاستقبال الضيوف",
+        "en": "Comfortable and elegant living room for guests"
+      },
+      "price": 11000,
+      "currency": "SAR",
+      "image": "/images/living-2.jpg",
+      "category": "livingRooms"
+    },
+    {
+      "id": 7,
+      "name": {
+        "ar": "صالون مودرن 7",
+        "en": "Modern Living Room 7"
+      },
+      "description": {
+        "ar": "صالون مريح وأنيق لاستقبال الضيوف",
+        "en": "Comfortable and elegant living room for guests"
+      },
+      "price": 13500,
+      "currency": "SAR",
+      "image": "/images/living-3.jpg",
+      "category": "livingRooms"
+    },
+    {
+      "id": 8,
+      "name": {
+        "ar": "طاولة سفرة خشبية 8",
+        "en": "Wooden Dining Table 8"
+      },
+      "description": {
+        "ar": "طاولة سفرة من أجود أنواع الخشب",
+        "en": "Dining table made from finest wood"
+      },
+      "price": 8000,
+      "currency": "SAR",
+      "image": "/images/dining-1.jpg",
+      "category": "diningRooms"
+    },
+    {
+      "id": 9,
+      "name": {
+        "ar": "طقم سفرة كامل 9",
+        "en": "Complete Dining Set 9"
+      },
+      "description": {
+        "ar": "طاولة سفرة من أجود أنواع الخشب",
+        "en": "Dining table made from finest wood"
+      },
+      "price": 9500,
+      "currency": "SAR",
+      "image": "/images/dining-2.jpg",
+      "category": "diningRooms"
+    },
+    {
+      "id": 10,
+      "name": {
+        "ar": "غرفة أطفال ملونة 10",
+        "en": "Colorful Kids Room 10"
+      },
+      "description": {
+        "ar": "غرفة أطفال آمنة وملونة ومرحة",
+        "en": "Safe, colorful and fun kids room"
+      },
+      "price": 6500,
+      "currency": "SAR",
+      "image": "/images/kids-1.jpg",
+      "category": "children"
+    },
+    {
+      "id": 11,
+      "name": {
+        "ar": "سرير أطفال 11",
+        "en": "Kids Bed 11"
+      },
+      "description": {
+        "ar": "غرفة أطفال آمنة وملونة ومرحة",
+        "en": "Safe, colorful and fun kids room"
+      },
+      "price": 4500,
+      "currency": "SAR",
+      "image": "/images/kids-2.jpg",
+      "category": "children"
+    },
+    {
+      "id": 12,
+      "name": {
+        "ar": "مكتب تنفيذي 12",
+        "en": "Executive Desk 12"
+      },
+      "description": {
+        "ar": "مكتب أنيق ومريح للعمل والدراسة",
+        "en": "Elegant and comfortable desk for work and study"
+      },
+      "price": 9500,
+      "currency": "SAR",
+      "image": "/images/office-1.jpg",
+      "category": "offices"
+    },
+    {
+      "id": 13,
+      "name": {
+        "ar": "كرسي مكتب 13",
+        "en": "Office Chair 13"
+      },
+      "description": {
+        "ar": "مكتب أنيق ومريح للعمل والدراسة",
+        "en": "Elegant and comfortable desk for work and study"
+      },
+      "price": 3500,
+      "currency": "SAR",
+      "image": "/images/office-2.jpg",
+      "category": "offices"
+    },
+    {
+      "id": 14,
+      "name": {
+        "ar": "خزانة ملابس 14",
+        "en": "Wardrobe 14"
+      },
+      "description": {
+        "ar": "حلول تخزين عملية وأنيقة",
+        "en": "Practical and elegant storage solutions"
+      },
+      "price": 7500,
+      "currency": "SAR",
+      "image": "/images/storage-1.jpg",
+      "category": "storage"
+    },
+    {
+      "id": 15,
+      "name": {
+        "ar": "دولاب كبير 15",
+        "en": "Large Closet 15"
+      },
+      "description": {
+        "ar": "حلول تخزين عملية وأنيقة",
+        "en": "Practical and elegant storage solutions"
+      },
+      "price": 8500,
+      "currency": "SAR",
+      "image": "/images/storage-2.jpg",
+      "category": "storage"
+    }
+  ]
+}
