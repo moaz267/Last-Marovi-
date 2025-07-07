@@ -135,23 +135,23 @@ const ContactContent = () => {
                         {isRTL ? 'العنوان' : 'Address'}
                       </h4>
                       <p className="text-modern-dark/70 font-modern">
-                        {isRTL ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'}
+                        {isRTL ? 'دمياط , طريق بورسعيد ' : 'Damietta, Port Said Road'}
                       </p>
                     </div>
                   </div>
                   
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-modern-primary rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-marovi-gold rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-modern-dark font-modern">
+                      <h4 className="font-semibold text-marovi-dark-brown">
                         {isRTL ? 'الهاتف' : 'Phone'}
                       </h4>
-                      <a href="tel:01067231442" className="text-modern-dark/70 hover:text-modern-primary font-modern">
-                        01067231442
+                      <a href="tel:+20 01067231442" className="text-marovi-brown hover:text-marovi-gold">
+                         010 672 31442
                       </a>
                     </div>
                   </div>
@@ -163,22 +163,21 @@ const ContactContent = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-modern-dark font-modern">
+                      <h4 className="font-semibold text-marovi-dark-brown">
                         {isRTL ? 'واتساب' : 'WhatsApp'}
                       </h4>
                       <a 
-                        href="https://wa.me/01067231442" 
+                        href="https://wa.me/201067231442" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-modern-dark/70 hover:text-green-500 font-modern"
+                        className="text-marovi-brown hover:text-green-500"
                       >
-                        01067231442
+                        01067231442 
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-2xl shadow-lg p-8 border border-modern-primary/10">
                 <h3 className="text-2xl font-bold text-modern-dark mb-6 font-modern">
                   {isRTL ? 'ساعات العمل' : 'Working Hours'}

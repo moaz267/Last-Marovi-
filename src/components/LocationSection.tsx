@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
@@ -7,8 +6,7 @@ const LocationSection = () => {
   const { t, isRTL } = useLanguage();
 
   const openInGoogleMaps = () => {
-    // You can replace this URL with the actual location coordinates
-    const mapsUrl = "https://www.google.com/maps/place/Riyadh+Saudi+Arabia";
+    const mapsUrl = "https://maps.app.goo.gl/ze5KvA4vzVdjkCFs9";
     window.open(mapsUrl, '_blank');
   };
 
@@ -32,7 +30,7 @@ const LocationSection = () => {
             {/* Google Maps Embed */}
             <div className="relative w-full h-96 md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.1234567890123!2d46.6724!3d24.7136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzQ5LjAiTiA0NsKwNDAnMjAuNiJF!5e0!3m2!1sen!2ssa!4v1234567890123!5m2!1sen!2ssa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d852.1249114201753!2d31.818568482427955!3d31.417364252961795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dc49bce54d9%3A0xc87d305fb7e3dfb4!2z2YXYtdix2YPYqSDYp9mE2YXYsdmD2Kkg2YjZhNiv2YbYqtiu!5e0!3m2!1sar!2seg!4v1720337652252!5m2!1sar!2seg"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -60,7 +58,7 @@ const LocationSection = () => {
                         </svg>
                       </div>
                       <span className="text-modern-dark font-modern">
-                        {isRTL ? 'الرياض، المملكة العربية السعودية' : 'Riyadh, Saudi Arabia'}
+                        {isRTL ? 'دمياط، طريق بورسعيد' : 'Damietta, Egypt'}
                       </span>
                     </div>
                     <div className="flex items-center gap-3">

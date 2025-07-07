@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -7,7 +6,7 @@ import { ShoppingCart } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
 
 const Header = () => {
-  const { t, isRTL } = useLanguage();
+  const { t } = useLanguage();
   const { items } = useCart();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,7 +20,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
@@ -38,10 +36,10 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full ${
-      isScrolled 
-        ? 'bg-modern-white backdrop-blur-md shadow-lg' 
+      isScrolled
+        ? 'bg-modern-white backdrop-blur-md shadow-lg'
         : 'bg-modern-white/95 backdrop-blur-sm shadow-sm'
-    }`}>
+    } ${isMobileMenuOpen ? 'pb-4' : ''}`}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-16 md:h-20 px-4">
           {/* Logo */}
@@ -50,12 +48,8 @@ const Header = () => {
               <span className="text-white font-bold text-sm md:text-xl">M</span>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-base md:text-xl text-modern-dark text-shadow">
-                ماروفي
-              </span>
-              <span className="text-xs md:text-sm text-modern-primary">
-                Marovi
-              </span>
+              <span className="font-bold text-base md:text-xl text-modern-dark text-shadow">ماروفي</span>
+              <span className="text-xs md:text-sm text-modern-primary">Marovi</span>
             </div>
           </Link>
 
@@ -81,8 +75,8 @@ const Header = () => {
           {/* Right side controls */}
           <div className="flex items-center gap-2 md:gap-4">
             <LanguageToggle />
-            
-            {/* Cart Button */}
+
+            {/* Cart */}
             <Link
               to="/cart"
               className="relative p-2 rounded-full transition-all duration-500 hover-scale text-modern-dark hover:text-modern-primary touch-target"
@@ -94,12 +88,12 @@ const Header = () => {
                 </span>
               )}
             </Link>
-            
-            {/* WhatsApp Button */}
+
+            {/* WhatsApp (Simple Icon Button) */}
             <a
-              href="https://wa.me/201067231442"
-              target="_blank"
-              rel="noopener noreferrer"
+                        href="https://wa.me/201067231442" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white px-2 py-2 md:px-4 md:py-2 rounded-full flex items-center gap-1 md:gap-2 transition-all duration-300 hover-scale text-xs md:text-sm touch-target"
             >
               <svg className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -107,7 +101,6 @@ const Header = () => {
               </svg>
               <span className="hidden sm:inline">{t('whatsapp')}</span>
             </a>
-
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

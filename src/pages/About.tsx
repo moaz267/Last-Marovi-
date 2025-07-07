@@ -110,7 +110,7 @@ const AboutContent = () => {
       </section>
 
       {/* Testimonials */}
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       {/* Location Section */}
       <LocationSection />

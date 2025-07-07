@@ -67,7 +67,7 @@ const translations = {
     
     // Product Details
     price: 'السعر',
-    sar: 'ريال',
+    sar: 'جنيه',
     description: 'الوصف',
     specifications: 'المواصفات',
     colors: 'الألوان المتاحة',

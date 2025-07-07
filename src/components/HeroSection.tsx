@@ -6,9 +6,9 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2158&q=80',
-    'https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-    'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=2158&q=80',
+    'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=2069&q=80',
+    'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=2070&q=80'
   ];
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <p className="text-base sm:text-lg text-white/90 mb-6 md:mb-8 max-w-3xl leading-relaxed">
               {t('heroDescription')}
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 w-full max-w-lg">
               <button className="bg-modern-navy hover:bg-modern-hover-blue text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-base md:text-lg transition-all duration-300 hover-scale shadow-lg btn-mobile w-full sm:w-auto flex-1 sm:flex-initial">
                 {t('exploreCollection')}
@@ -66,21 +66,23 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Slide Indicators - Made even smaller */}
-      <div className="absolute bottom-16 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-1.5 z-20">
+      {/* Slide Indicators (larger size) */}
+      <div className="absolute bottom-16 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
         {heroImages.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 touch-target ${
-              index === currentSlide ? 'bg-modern-accent w-4' : 'bg-white/50 hover:bg-white/70'
+            className={`h-3 w-3 sm:h-3.5 sm:w-3.5 rounded-full transition-all duration-300 ${
+              index === currentSlide
+                ? 'bg-modern-accent w-5 sm:w-6'
+                : 'bg-white/50 hover:bg-white/70'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
 
-      {/* Scroll Indicator - Hidden on mobile */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 right-8 text-white animate-bounce hidden md:block">
         <div className="flex flex-col items-center gap-2">
           <span className="text-sm text-white/80">{isRTL ? 'مرر للأسفل' : 'Scroll Down'}</span>
